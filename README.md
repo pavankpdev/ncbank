@@ -5,4 +5,4 @@ This is a simple side project I'm building to learn about Go, PostgreSQL, gRPC, 
 
 Check of the `Makefile` for commands to work run this project. 
 
-![Night City Bank](https://www.worldanvil.com/media/cache/cover/uploads/images/6754565b3c0ed0a21fb180aa03e48d6b.jpg)
+![Night City Bank](https://dbaugbrwob9sy.cloudfront.net/5048899.png)
