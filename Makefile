@@ -14,7 +14,7 @@ migratedown:
 	migrate -path db/migration -database "postgresql://pavan:pavan@localhost:5432/ncbank?sslmode=disable" -verbose down
 
 sqlc:
-	sqlc generate
+	./sqlc generate
 
 test:
 	go test -v -cover ./...
