@@ -2,10 +2,11 @@ package db
 
 import (
 	"context"
-	"github.com/pavankpdev/ncbank/util"
-	"github.com/stretchr/testify/require"
 	"testing"
 	"time"
+
+	"github.com/pavankpdev/ncbank/util"
+	"github.com/stretchr/testify/require"
 )
 
 func createRandomTransfer(t *testing.T, from, to Account) Transfer {

@@ -2,10 +2,11 @@ package db
 
 import (
 	"context"
-	"github.com/pavankpdev/ncbank/util"
-	"github.com/stretchr/testify/require"
 	"testing"
 	"time"
+
+	"github.com/pavankpdev/ncbank/util"
+	"github.com/stretchr/testify/require"
 )
 
 func createRandomEntry(t *testing.T, account Account) Entry {

@@ -2,15 +2,15 @@ package db
 
 import (
 	"database/sql"
-	_ "github.com/lib/pq"
 	"log"
-	"os"
 	"testing"
+
+	_ "github.com/lib/pq"
 )
 
 const (
 	dbDriver = "postgres"
-	dbSource = "postgresql://pavan:pavan@localhost:5432/ncbank?sslmode=disable"
+	dbSource = "postgresql://postgres:pavan@localhost:5432/pavan.kumar?sslmode=disable"
 )
 
 var testQueries *Queries
@@ -21,10 +21,10 @@ func TestMain(m *testing.M) {
 	testDB, err = sql.Open(dbDriver, dbSource)
 
 	if err != nil {
-		log.Fatalln("Cannot connect to DB")
+		log.Fatal("Cannot connect to the DB", err)
 	}
 
 	testQueries = New(testDB)
 
-	os.Exit(m.Run())
+	m.Run()
 }
