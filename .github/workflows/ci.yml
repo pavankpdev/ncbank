@@ -26,6 +26,8 @@ jobs:
           POSTGRES_USER: pavan
           POSTGRES_DB: ncbank
         # Set health checks to wait until postgres has started
+        ports:
+          - 5432:5432
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
